@@ -37,7 +37,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     // Load NPM Tasks
-    require('load-grunt-tasks')(grunt, ['grunt-*', '!grunt-template-jasmine-istanbul', '!grunt-template-jasmine-requirejs']);
+    require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '!grunt-template-jasmine-istanbul', '!grunt-template-jasmine-requirejs']});
 
     // Project configuration.
     grunt.initConfig({
